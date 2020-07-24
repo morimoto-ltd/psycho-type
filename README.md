@@ -170,6 +170,8 @@ Have two aliases:
  - bigInt
  - bigNumber
 
+<!-- end of the list -->
+
         Param {Any} item
         Return {Boolean}
 
@@ -191,6 +193,8 @@ Allow only boolean.
 Have two aliases:
  - bool
  - boolean
+
+<!-- end of the list -->
 
         Param {Any} item
         Return {Boolean}
@@ -331,6 +335,8 @@ Allow only NaN.
 Have two aliases:
  - nan
  - NaN
+
+<!-- end of the list -->
 
         Param {Any} item
         Return {Boolean}
