@@ -1,9 +1,9 @@
-# Type Checker
+# Psycho
   Simple and lightweight type validation library for [node](http://nodejs.org).
   
   
 ```js
-const type = require('type-checker')
+const type = require('psycho-type')
 const referece = {
   'foo': type.string(),
   'bar': type.number()
@@ -21,7 +21,7 @@ This is a [node.js](http://nodejs.org) module available via [npm](https://www.np
 Requires node.js 4.9.1 or highter.
 
 ```bash
-$ npm i type-checker
+$ npm i psycho-type
 ```
 
 ## Usage
