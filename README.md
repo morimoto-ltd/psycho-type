@@ -1,4 +1,4 @@
-# Psycho
+# PsychoType
   Simple and lightweight type validation library for [node](http://nodejs.org).
   
   
