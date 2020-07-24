@@ -84,10 +84,10 @@ type.check( reference, object )
 + [Complex types](#Complex-Types)
   - [No Value](#No-Value)
   - [Empty](#Empty)
-  - [Array Of <types>](#Array-Of-_\<types\>_)
-  - [Enum <values>](#Enum-_\<values\>_)
-  - [Some Of <types>](#Some-Of-_\<types\>_)
-  - [Not <types>](#Not-_\<types\>_)
+  - [Array Of <types>](#Array-Of-types)
+  - [Enum <values>](#Enum-values)
+  - [Some Of <types>](#Some-Of-types)
+  - [Not <types>](#Not-types)
 + [Check Method](#Check-Method)
 
 ## Basic Types
@@ -170,9 +170,8 @@ Have two aliases:
  - bigInt
  - bigNumber
 
-
-    Param {Any} item
-    Return {Boolean}
+        Param {Any} item
+        Return {Boolean}
 
 ```js
 const bigint = type.bigInt()
@@ -193,9 +192,8 @@ Have two aliases:
  - bool
  - boolean
 
-
-    Param {Any} item
-    Return {Boolean}
+        Param {Any} item
+        Return {Boolean}
 
 ```js
 const bool = type.bool()
@@ -334,9 +332,8 @@ Have two aliases:
  - nan
  - NaN
 
-
-    Param {Any} item
-    Return {Boolean}
+        Param {Any} item
+        Return {Boolean}
 
 ```js
 const null_type = type.null()
