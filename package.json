@@ -1,6 +1,6 @@
 {
   "name": "psycho-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and lightweight module for dynamic type cheking.",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,34 @@
     "name": "Dmitry Kokhanevych",
     "email": "dmitry.kokhanevich@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/morimoto-ltd/psycho-type/issues"
+  },
+  "bundleDependencies": false,
   "license": "MIT",
+  "engines": {
+    "node": ">= 4.9.1"
+  },
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "lib/"
+  ],
+  "homepage": "https://github.com/morimoto-ltd/psycho-type",
+  "keywords": [
+    "type",
+    "types",
+    "typescript",
+    "interace",
+    "type-safe",
+    "validator",
+    "input",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morimoto-ltd/psycho-type.git"
+  },
   "devDependencies": {
     "eslint": "^7.5.0",
     "mocha": "^8.0.1"
