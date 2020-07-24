@@ -1,0 +1,19 @@
+{
+  "name": "type-checker",
+  "version": "1.0.0",
+  "description": "Simple and lightweight module for dynamic type cheking.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --check-leaks test/",
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Dmitry Kokhanevych",
+    "email": "dmitry.kokhanevich@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "mocha": "^8.0.1"
+  }
+}
