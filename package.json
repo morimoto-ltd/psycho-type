@@ -24,6 +24,9 @@
     "Readme.md",
     "lib/"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "homepage": "https://github.com/morimoto-ltd/psycho-type",
   "keywords": [
     "type",
