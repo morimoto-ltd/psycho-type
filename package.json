@@ -1,7 +1,7 @@
 {
   "name": "psycho-type",
   "version": "1.0.1",
-  "description": "Simple and lightweight module for dynamic type cheking.",
+  "description": "Simple and lightweight module for dynamic type checking.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --check-leaks test/",
