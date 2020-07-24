@@ -74,7 +74,7 @@ type.check( reference, object )
     * [Number](#Number)
     * [BigInt](#BigInt)
   - [Boolean](#Boolean)
-  - [function](#Function)
+  - [Function](#Function)
   - [Object](#Object)
   - [Array](#Array)
   - [Symbol](#Symbol)
@@ -84,20 +84,19 @@ type.check( reference, object )
 + [Complex types](#Complex-Types)
   - [No Value](#No-Value)
   - [Empty](#Empty)
-  - [Array Of <types>](#Array-Of-<types>)
-  - [Enum <values>](#Enum-<values>)
-  - [Some Of <types>](#Some-Of-<types>)
-  - [Not <types>](#Not-<types>)
+  - [Array Of <types>](#Array-Of-\<types\>)
+  - [Enum <values>](#Enum-\<values\>)
+  - [Some Of <types>](#Some-Of-\<types\>)
+  - [Not <types>](#Not-\<types\>)
 + [Check Method](#Check-Method)
 
 ## Basic Types
 
-(#type-any)
 ### Any
 Just returns true on everything.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const any = type.any()
@@ -109,8 +108,8 @@ any( * )
 ### String
 Allow both ' "string" ' and ' new String() '.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const string = type.string()
@@ -130,8 +129,8 @@ string( new String() )
 #### Any Number
 Allow number, bigInt or NaN.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const anyNumber = type.anyNumber()
@@ -149,8 +148,8 @@ anyNumber( '3' )
 #### Number
 Allow only regular number.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const number = type.number()
@@ -171,8 +170,8 @@ Have two aliases:
  - bigInt
  - bigNumber
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const bigint = type.bigInt()
@@ -193,8 +192,8 @@ Have two aliases:
  - bool
  - boolean
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const bool = type.bool()
@@ -212,10 +211,10 @@ bool( new Boolean(1) )
 ### Function
 Allow only functions.
 
-! Any class/constructor will return true !
+    ! Any class/constructor will return true !
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const func = type.function()
@@ -233,10 +232,10 @@ func( Boolean ) // Because ' Boolean ' it's the constructor
 ### Object
 Allow only objects.
 
-> ! Doesn't allow null or basic data types even if it's created by ' new Object() ' !
+    ! Doesn't allow null or basic data types even if it's created by ' new Object() ' !
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const object = type.object()
@@ -254,8 +253,8 @@ object( {} )
 ### Array
 Allow array with any value.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const array = type.array()
@@ -273,8 +272,8 @@ array( {} )
 ### Symbol
 Allow symbol.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const symbol = type.symbol()
@@ -292,8 +291,8 @@ symbol( {} )
 ### Undefined
 Allow only undefined.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const not_defined = type.undefined()
@@ -311,8 +310,8 @@ not_defined( undefined )
 ### Null
 Allow only null.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const null_type = type.null()
@@ -333,8 +332,8 @@ Have two aliases:
  - nan
  - NaN
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const null_type = type.null()
@@ -354,8 +353,8 @@ null_type( undefined )
 ### No Value
 Allow ' no value ' types such as undefined, null, NaN.
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const no_value = type.noValue()
@@ -373,10 +372,10 @@ no_value( undefined )
 ### Empty
 Allow ' empty ' values such as {}, [], '' and 0.
 
-> ! Doesn't work NOW with values created from constructor ( like ' new String() ' ) !
+    ! Doesn't work NOW with values created from constructor ( like ' new String() ' ) !
 
-> Param {Any} item
-> Return {Boolean}
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const empty = type.empty()
@@ -391,13 +390,13 @@ empty( new String() )
 //=> false
 ```
 
-### Array Of _<types>_
+### Array Of _\<types\>_
 Allow array with some types.
 
-> Param {Array} ...types
-> Return {function}:
-  > Param {Array} item
-  > Return {Boolean}
+    Param {Array} ...types
+    Return {function}:
+        Param {Array} item
+        Return {Boolean}
 
 ```js
 const array = type.arrayOf(
@@ -415,15 +414,15 @@ array( new Boolean() )
 //=> true
 ```
 
-### Enum _<values>_
+### Enum _\<values\>_
 Allow only some values.
 
-> ! Doesn't work NOW for values, created by like ' new Number() ' !
+    ! Doesn't work NOW for values, created by like ' new Number() ' !
 
-> Param {Array} ...values
-> Return {function}:
-  > Param {Any} item
-  > Return {Boolean}
+    Param {Array} ...values
+    Return {function}:
+    Param {Any} item
+    Return {Boolean}
 
 ```js
 const enum = type.enum(
@@ -441,13 +440,13 @@ enum( 4 )
 //=> false
 ```
 
-### Some Of _<types>_
+### Some Of _\<types\>_
 Allow some types.
 
-> Param {Array} ...types
-> Return {function}:
-  > Param {Any} item
-  > Return {Boolean}
+    Param {Array} ...types
+    Return {function}:
+        Param {Any} item
+        Return {Boolean}
 
 ```js
 const some = type.someOf(
@@ -465,13 +464,13 @@ some( false )
 //=> true
 ```
 
-### Not _<types>_
+### Not _\<types\>_
 Inverted ' someOf '. Disallow some types.
 
-> Param {Array} ...types
-> Return {function}:
-  > Param {Any} item
-  > Return {Boolean}
+    Param {Array} ...types
+    Return {function}:
+        Param {Any} item
+        Return {Boolean}
 
 ```js
 const not = type.not(
@@ -491,10 +490,10 @@ some( false )
 ## Check Method
 Compare types of input object with reference.
 
-> ! Method will return false if reference is not valid, without any exeption !
+    ! Method will return false if reference is not valid, without any exeption !
 
-> Param {Object|Function} reference/type
-> Return {Boolean}
+    Param {Object|Function} reference/type
+    Return {Boolean}
 
 ```js
 const reference = {          // Reference object, contain types.
