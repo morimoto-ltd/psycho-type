@@ -1,7 +1,10 @@
 # PsychoType
   Simple and lightweight type validation library for [node](http://nodejs.org).
-  
-  
+
+  [![license](https://img.shields.io/npm/l/psycho-type)](https://www.npmjs.com/package/psycho-type)
+  [![Version](https://img.shields.io/npm/v/psycho-type)](https://www.npmjs.com/package/psycho-type)
+  [![Size](https://packagephobia.now.sh/badge?p=psycho-type)](https://packagephobia.now.sh/result?p=psycho-type)
+
 ```js
 const type = require('psycho-type')
 const referece = {
