@@ -142,7 +142,7 @@ const anyNumber = type.anyNumber()
 anyNumber( 3 )
 //=> true
 
-anyNumber( new BigInt() )
+anyNumber( BigInt() )
 //=> true
 
 anyNumber( '3' )
@@ -161,7 +161,7 @@ const number = type.number()
 number( 3 )
 //=> true
 
-number( new BigInt() )
+number( BigInt() )
 //=> false
 
 number( '3' )
@@ -185,7 +185,7 @@ const bigint = type.bigInt()
 bigint( 3 )
 //=> false
 
-bigint( new BigInt() )
+bigint( BigInt() )
 //=> true
 
 bigint( '3n' )
