@@ -612,4 +612,38 @@ describe( 'Types', () => {
   })
 
 
+  describe( 'Of', () => {
+
+    it( 'Should detect types', () => {
+      const result = t.of( 32 ) === 'number' &&
+                     t.of( 32n ) === 'bigint' &&
+                     t.of( '' ) === 'string' &&
+                     t.of( {} ) === 'object' &&
+                     t.of( [] ) === 'array' &&
+                     t.of( NaN ) === 'NaN' &&
+                     t.of( null ) === 'null' &&
+                     t.of( true ) === 'boolean' &&
+                     t.of( () => {} ) === 'function' &&
+                     t.of( Symbol('a') ) === 'symbol' &&
+                     t.of( undefined ) === 'undefined'
+                     
+      assert.equal( result, true )
+    })
+
+    it( 'Should detect types of items created by constructor', () => {
+      const result = t.of( new Number(32) ) === 'number' &&
+                     t.of( BigInt( 32 ) ) === 'bigint' &&
+                     t.of( new String('') ) === 'string' &&
+                     t.of( new Object() ) === 'object' &&
+                     t.of( new Array( 1 , 2 ) ) === 'array' &&
+                     t.of( new Number( NaN ) ) === 'NaN' &&
+                     t.of( new Boolean( 1 ) ) === 'boolean' &&
+                     t.of( new Function() ) === 'function' &&
+
+      assert.equal( result, true )
+    })
+
+  })
+
+
 })
