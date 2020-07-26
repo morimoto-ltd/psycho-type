@@ -93,6 +93,7 @@ type.check( reference, object )
   - [Some Of _\<types\>_](#Some-Of-types)
   - [Not _\<types\>_](#Not-types)
 + [Check Method](#Check-Method)
++ [Of Method](#Of-Method)
 
 ## Basic Types
 
