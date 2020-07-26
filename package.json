@@ -1,6 +1,6 @@
 {
   "name": "psycho-type",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Simple and lightweight module for dynamic type checking.",
   "main": "lib/index.js",
   "scripts": {
