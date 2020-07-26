@@ -497,7 +497,8 @@ some( 3 )
 some( false )
 //=> false
 ```
-## Check Method
+
+## 'Check' Method
 Compare types of input object with reference.
 
     ! Method will return false if reference is not valid, without any exeption !
@@ -524,6 +525,27 @@ const object = {             // Valid object.
 
 type.check( reference, object )
 //=> true
+```
+
+## 'Of' Method
+Returns type of input even if input created like ' new Object(3) ' and
+has custom types: 'null', 'NaN'.
+
+        Param {Any} item
+        Return {String}
+
+```js
+type.of( Number );
+//=> 'function'
+
+type.of( null );
+//=> 'null'
+
+type.of( NaN );
+//=> 'NaN'
+
+type.of( new Object('string') );
+//=> 'string'
 ```
 
 # Contacts
