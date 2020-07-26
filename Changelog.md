@@ -24,6 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 'Check' method
 - Tests
 
-[1.1.0]: https://github.com/morimoto-ltd/psycho-type/compare/v1.0.3...v1.1.0
-[1.0.3]: https://github.com/morimoto-ltd/psycho-type/releases/tag/v1.0.3
+[1.1.0]: https://github.com/morimoto-ltd/psycho-type/compare/1.1.0...1.0.3
+[1.0.3]: https://github.com/morimoto-ltd/psycho-type/releases/tag/1.0.3
 
